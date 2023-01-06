@@ -7,29 +7,24 @@
           clone-depth="1" /> 
     
     <!-- Sync trees -->
-    <project path="device/xiaomi/onclite" name="ExodusOS/android_device_xiaomi_onclite" remote="all" revision="lineage-19.1" />
-    <project path="vendor/xiaomi/onclite" name="Sensei-Developer/vendor" remote="all" revision="lineage-19.1" />
-    <project path="kernel/xiaomi/onclite" name="CraftRom/Chidori-Kernel_onclite" remote="all" revision="nightly" />
+    <project path="device/xiaomi/lavender" name="ExodusOS/android_device_xiaomi_lavender" remote="all" revision="lineage-19.1" />
+    <project path="device/xiaomi/sdm660-common" name="ExodusOS/android_device_xiaomi_sdm660-common" remote="all" revision="lineage-19.1" />
+    <project path="vendor/xiaomi/lavender" name="ExodusOS/android_vendor_xiaomi_lavender" remote="all" revision="lineage-19.1" />
+    <project path="vendor/xiaomi/sdm660-common" name="iKeramat/proprietary_vendor_xiaomi_sdm660-common" remote="all" revision="lineage-19.1" />
+    <project path="kernel/xiaomi/sdm660" name="projects-nexus/nexus_kernel_xiaomi_lavender" remote="all" revision="a12" />
     <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="ArrowOS-Devices/android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="all" revision="arrow-11.0" />
     
     <!-- HALs -->
-    <remove-project name="LineageOS/android_hardware_qcom_audio" />
-    <project path="hardware/qcom-caf/msm8996/audio" name="LineageOS/android_hardware_qcom_audio" remote="all" revision="lineage-19.1-caf-msm8996" />
-    <remove-project name="LineageOS/android_hardware_qcom_media" />
-    <project path="hardware/qcom-caf/msm8996/media" name="LineageOS/android_hardware_qcom_media" remote="all" revision="lineage-19.1-caf-msm8996" />
-    <remove-project name="LineageOS/android_hardware_qcom_display" />
-    <project path="hardware/qcom-caf/msm8996/display" name="LineageOS/android_hardware_qcom_display" remote="all" revision="lineage-19.1-caf-msm8996" />
-    <remove-project name="LineageOS/android_hardware_qcom_wlan" />
-    <project path="hardware/qcom-caf/wlan" name="bibarub/hardware_qcom_wlan" remote="all" revision="12.x" />
-     
-     <!-- Extra -->
-     <project path="vendor/pixel-framework" name="ExodusOS/android_external_pixel-framework" remote="all" revision="lineage-19.1" />
-      <remove-project name="LineageOS/android_packages_apps_Backgrounds" />
-     <project path="packages/apps/Backgrounds" name="ExodusOS/android_packages_apps_Backgrounds" remote="all" revision="lineage-19.1" />
-     <project path="vendor/RomOTA" name="ExodusOS/exodus_vendor_RomOTA" remote="all" revision="squirrel" />
-     <remove-project name="LineageOS/android_packages_apps_Updater" />
+    <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="all" revision="lineage-19.1" />
+
+    <!-- Extra -->
+    <project path="vendor/pixel-framework" name="ExodusOS/android_external_pixel-framework" remote="all" revision="lineage-19.1" />
+    <remove-project name="LineageOS/android_packages_apps_Backgrounds" />
+    <project path="packages/apps/Backgrounds" name="ExodusOS/android_packages_apps_Backgrounds" remote="all" revision="lineage-19.1" />
+    <project path="vendor/RomOTA" name="ExodusOS/exodus_vendor_RomOTA" remote="all" revision="squirrel" />
+    <remove-project name="LineageOS/android_packages_apps_Updater" />
     <project path="packages/apps/Updater" name="ExodusOS/android_packages_apps_Updater" remote="all" revision="lineage-19.1" />
-     <remove-project name="LineageOS/android_lineage-sdk" />
+    <remove-project name="LineageOS/android_lineage-sdk" />
     <project path="lineage-sdk" name="ExodusOS/android_exodus-sdk" remote="all" revision="lineage-19.1" />
     <remove-project name="LineageOS/android_frameworks_base" />
     <project path="frameworks/base" name="ExodusOS/android_frameworks_base" remote="all" revision="lineage-19.1" />
@@ -41,17 +36,21 @@
     <project path="packages/overlays/Lineage" name="ExodusOS/android_packages_overlays_exodus" remote="all" revision="lineage-19.1" />
     <project path="vendor/support" name="ExodusOS/android_vendor_custom_preference" remote="all" revision="lineage-19.1" />
     <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="all" revision="main" />
-     <project path="packages/apps/ExodusSettings" name="ExodusOS/android_packages_apps_ExodusSettings" remote="all" revision="lineage-19.1" />
-     <remove-project name="LineageOS/android_packages_services_Telecomm" />
+    <project path="packages/apps/ExodusSettings" name="ExodusOS/android_packages_apps_ExodusSettings" remote="all" revision="lineage-19.1" />
+    <remove-project name="LineageOS/android_packages_services_Telecomm" />
     <project path="packages/services/Telecomm" name="ExodusOS/android_packages_services_Telecomm" remote="all" revision="lineage-19.1" />
     <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
     <project path="packages/apps/Trebuchet" name="ExodusOS/android_packages_apps_Trebuchet" remote="all" revision="lineage-19.1_old" />
-     <remove-project name="platform/frameworks/libs/net" />
+    <remove-project name="platform/frameworks/libs/net" />
     <project path="frameworks/libs/net" name="ExodusOS/android_frameworks_libs_net" remote="all" revision="lineage-19.1" />
     <remove-project name="LineageOS/android_packages_modules_Connectivity" />
     <project path="packages/modules/Connectivity" name="ExodusOS/android_packages_modules_Connectivity" remote="all" revision="lineage-19.1" />
-     <remove-project name="LineageOS/android_packages_apps_ThemePicker" />
+    <remove-project name="LineageOS/android_packages_apps_ThemePicker" />
     <project path="packages/apps/ThemePicker" name="ExodusOS/android_packages_apps_ThemePicker" remote="all" revision="lineage-19.1" />
     <remove-project name="LineageOS/android_device_lineage_sepolicy" />
     <project path="device/lineage/sepolicy" name="ExodusOS/android_device_lineage_sepolicy" remote="all" revision="lineage-19.1" />
+    <remove-project name="LineageOS/android_bionic" />
+    <project path="bionic" name="ExodusOS/android_bionic" remote="all" revision="lineage-19.1" />
+    <remove-project name="LineageOS/android_system_core" />
+    <project path="system/core" name="ExodusOS/android_system_core" remote="all" revision="lineage-19.1" />
 </manifest>
